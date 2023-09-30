@@ -88,59 +88,35 @@ console.clear();
 
 // get data
 
-//  const  makeReqest2 = async (config) => {
-//     return await axios(config)
-//  }
+ const  makeReqest2 = async (config) => {
+    return await axios(config)
+ }
 
-//  const getData =() =>{
-//     makeReqest2("https://jsonplaceholder.typicode.com/posts")
-//     .then((res) => console.log(res.data))
-//     .catch((err)=> console.log(err))
-//  }
+ const getData =() =>{
+    makeReqest2("https://jsonplaceholder.typicode.com/posts")
+    .then((res) => console.log(res.data))
+    .catch((err)=> console.log(err))
+ }
 
-//  getData()
+ getData()
 
 
 
 // post data
 
 
-//  const  makeReqest3 = async (config) => {
-//     return await axios(config)
-//  }
-
-//  const sendData =() =>{
-//     makeReqest3({
-//         url:"https://jsonplaceholder.typicode.com/posts",
-//         method: "post",
-//         data: JSON.stringify({ 
-//             id: 10,   //axios ar data
-//             title: 'fooooooooooooooooooooo',
-//             body: 'barrrrrrrrrrrrrrrrrrrrrrrrrr',
-//             userId: 10,
-//           }),
-//     })
-
-//     .then((res) => console.log(res.data))
-//     .catch((err)=> console.log(err))
-//  }
-
-
-
-// put data
-
- const  makeReqest4 = async (config) => {
+ const  makeReqest3 = async (config) => {
     return await axios(config)
  }
 
- const updateData =() =>{
-    makeReqest4({
-        url:"https://jsonplaceholder.typicode.com/posts/1",
-        method: "put",
-        data: JSON.stringify({ //axios ar data body ka manage kora nisa
-            id: 1,   // json fack api documentation ar onujayi  id daya
-            title: 'fooma',
-            body: 'barma',
+ const sendData =() =>{
+    makeReqest3({
+        url:"https://jsonplaceholder.typicode.com/posts",
+        method: "post",
+        data: JSON.stringify({ 
+            id: 10,   //axios ar data
+            title: 'fooooooooooooooooooooo',
+            body: 'barrrrrrrrrrrrrrrrrrrrrrrrrr',
             userId: 10,
           }),
     })
@@ -149,7 +125,31 @@ console.clear();
     .catch((err)=> console.log(err))
  }
 
- updateData()
+
+
+// put data update data
+
+//  const  makeReqest4 = async (config) => {
+//     return await axios(config)
+//  }
+
+//  const updateData =() =>{
+//     makeReqest4({
+//         url:"https://jsonplaceholder.typicode.com/posts/1",
+//         method: "put",
+//         data: JSON.stringify({ //axios ar data body ka manage kora nisa
+//             id: 1,   // json fack api documentation ar onujayi  id daya
+//             title: 'fooma',
+//             body: 'barma',
+//             userId: 10,
+//           }),
+//     })
+
+//     .then((res) => console.log(res.data))
+//     .catch((err)=> console.log(err))
+//  }
+
+//  updateData()
 
 
 // patch data
@@ -178,6 +178,7 @@ console.clear();
 
 
 //  delete
+
 
 //  const  makeReqest3 = async (config) => {
 //     return await axios(config)
